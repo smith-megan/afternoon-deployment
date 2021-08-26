@@ -12,7 +12,7 @@ app.get("/", (req, res)=>{
 // })
 
 app.use('/css', express.static(path.join(__dirname, 'client/index.css')))
-app.use('/js', express.static(path.join(__dirname, "client/index.js")))
+app.use('/js', express.static(path.join(__dirname, 'client/index.js')))
 
 const PORT=process.env.PORT || 2200
 
