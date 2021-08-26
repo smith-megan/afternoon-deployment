@@ -8,7 +8,7 @@ app.get("/", (req, res)=>{
 })
 
 app.get('/css', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/index.css'))
+  res.sendFile(path.join(__dirname, "../client/index.css"))
 })
 
 const PORT=process.env.PORT || 2200
