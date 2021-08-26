@@ -3,3 +3,5 @@ function makeStuff() {
   pTag.textContent="hello I am here"
   document.body.append(pTag)
 }
+
+makeStuff()
