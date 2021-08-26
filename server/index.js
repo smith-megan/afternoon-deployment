@@ -3,8 +3,9 @@ const path = require('path')
 
 const app=(express())
 
-app.use('/css', express.static(path.join(__dirname, 'client/index.css')))
-app.use('/js', express.static(path.join(__dirname, 'client/index.js')))
+app.use('/css', express.static(path.join(__dirname, '../client/index.css')))
+// app.use('/js', express.static(path.join(__dirname, 'client/index.js')))
+console.log(__dirname)
 
 app.get("/", (req, res)=>{
   res.sendFile(path.join(__dirname, "../client/index.html"))
