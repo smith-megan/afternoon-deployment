@@ -11,6 +11,6 @@ app.get('/css', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/index.css'))
 })
 
-const PORT=process.env.PORT || 3000
+const PORT=process.env.PORT || 2200
 
 app.listen(PORT, ()=>{console.log(`server is up and running on ${PORT}`)})
